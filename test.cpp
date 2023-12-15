@@ -11,6 +11,12 @@ long long fibo(int n, long long arr[]){
     return arr[n];
 }
 
+int countnum(long long res){
+    if(res == 0)    return 0;    
+    res /= 10;
+    return 1 + countnum(res);  
+}
+
 int main(){
     int t; cin>>t;
     while (t--)
@@ -23,7 +29,8 @@ int main(){
             arr[i] = -1;
 
         long long res = fibo(n , arr);
-        cout<<res<<'\n';
+        int num = countnum(res);
+        cout<<"the numver "<<n<<" has fibo no. : "<<res<<" of length "<<num<<'\n';
         
     }
     
