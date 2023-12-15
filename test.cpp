@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+long long fibo(int n){
+    //memoization
+}
+
 int main(){
     int t; cin>>t;
     while (t--)
@@ -12,7 +16,7 @@ int main(){
         for (int i = 0; i < n; i++)
             arr[i] = -1;
 
-        int res = 1;//fibo(n);
+        long long res = fibo(n);
         cout<<res;
         
     }
