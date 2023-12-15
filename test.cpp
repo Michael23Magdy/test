@@ -16,7 +16,7 @@ int countnum(long long res){
     res /= 10;
     return 1 + countnum(res);  
 }
-
+//now we are done
 int main(){
     int t; cin>>t;
     while (t--)
