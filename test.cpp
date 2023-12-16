@@ -1,5 +1,9 @@
 #include<iostream>
+#define RED "\e[0;31m"
+#define GRN "\e[0;32m"
+#define YEL "\e[0;33m"
 using namespace std;
+
 
 long long fibo(int n, long long arr[]){
     if (arr[n]==-1)
@@ -30,7 +34,7 @@ int main(){
 
         long long res = fibo(n , arr);
         int num = countnum(res);
-        cout<<"the numver "<<n<<" has fibo no. : "<<res<<" of length "<<num<<'\n';
+        cout<<RED"the numver "<<n<<" has fibo no. : "<<GRN""<<res<<" of length "<<YEL""<<num<<'\n';
         
     }
     
